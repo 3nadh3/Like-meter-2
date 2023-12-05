@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.Main-page {
+    background-color: black;
+}
+
+/* Your existing styles for .meter, .bike, and .valli go here */
