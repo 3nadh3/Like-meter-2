@@ -17,7 +17,7 @@ const Meter = () => {
 
     return (
         <div className="meter">
-            <h1 style={{ textAlign: "center",fontSize:100 }}>Like meter</h1>
+            <h1 style={{ textAlign: "center",fontSize:50 }}>Like meter</h1>
             <h2 style={{ textAlign: "center" }}>
                 <span >{counter}</span>
                 
