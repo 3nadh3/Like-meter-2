@@ -62,7 +62,7 @@ const Valli = () => {
             <span>{countdown.days}</span> Days
           </span>
           <span className="countdown-item">
-            <span>{countdown.hours}</span> Hours
+            <span>{countdown.hours}</span> Hrs
           </span>
           <span className="countdown-item">
             <span>{countdown.minutes}</span> Mins

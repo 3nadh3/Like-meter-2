@@ -1,13 +1,13 @@
 body {
-  font: normal 11px/16px Arial, Helvetica, sans-serif;
+  font: normal 13px/20px Arial, Helvetica, sans-serif;
   word-wrap: break-word;
   color: #eee;
   background: #353535;
 }
 
 #countdown {
-  width: 320px;
-  height: 70px;
+  width: 330px;
+  height: 90px;
   text-align: center;
   background: #222;
   background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
@@ -15,10 +15,10 @@ body {
   background-image: -ms-linear-gradient(top, #222, #333, #333, #222);
   background-image: -o-linear-gradient(top, #222, #333, #333, #222);
   border: 1px solid #111;
-  border-radius: 3px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
   margin: auto;
-  padding: 12px 0;
+  padding: 18px 0;
   position: relative;
   top: 0;
   bottom: 0;
@@ -29,8 +29,8 @@ body {
 #countdown:before,
 #countdown:after {
   content: "";
-  width: 3px;
-  height: 22px;
+  width: 6px;
+  height: 45px;
   background: #444;
   background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
   background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
@@ -39,19 +39,19 @@ body {
   border: 1px solid #111;
   display: block;
   position: absolute;
-  top: 17px;
+  top: 34px;
 }
 
 #countdown:before {
-  left: -4px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  left: -8px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 #countdown:after {
-  right: -4px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  right: -8px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 #countdown #tiles {
@@ -60,9 +60,9 @@ body {
 }
 
 #countdown #tiles > span {
-  width: 50px;
-  max-width: 50px;
-  font: bold 15px 'Droid Sans', Arial, sans-serif;
+  width: 58px; /* Adjusted width to fit within the 330px container */
+  max-width: 58px; /* Adjusted max-width accordingly */
+  font: bold 24px 'Droid Sans', Arial, sans-serif;
   text-align: center;
   color: #111;
   background-color: #ddd;
@@ -72,52 +72,49 @@ body {
   background-image: -o-linear-gradient(top, #bbb, #eee);
   border-top: 1px solid #fff;
   border-radius: 3px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
-  margin: 0 2px;
-  padding: 4px 0;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+  margin: 0 4px;
+  padding: 8px 0;
   display: inline-block;
   position: relative;
+  overflow: hidden;
 }
 
-#countdown #tiles > span:before {
+#countdown #tiles > span.hours:before,
+#countdown #tiles > span.hours:after {
   content: "";
   width: 100%;
-  height: 4px;
+  height: 9px;
   background: #111;
   display: block;
-  padding: 0 1px;
   position: absolute;
-  top: 24%;
-  left: -1px;
   z-index: -1;
 }
 
-#countdown #tiles > span:after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #eee;
-  border-top: 1px solid #333;
-  display: block;
-  position: absolute;
-  top: 28%;
+#countdown #tiles > span.hours:before {
+  top: 31%;
+  left: -2px;
+}
+
+#countdown #tiles > span.hours:after {
+  top: 35%;
   left: 0;
 }
 
 #countdown .labels {
-  height: 14px;
+  height: 20px;
   text-align: center;
   position: absolute;
-  bottom: 3px;
+  bottom: 6px;
 }
 
 #countdown .labels li {
-  width: 46px;
-  font: bold 9px 'Droid Sans', Arial, sans-serif;
+  width: 58px; /* Adjusted width to fit within the 330px container */
+  font: bold 12px 'Droid Sans', Arial, sans-serif;
   color: #f47321;
   text-shadow: 1px 1px 0px #000;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-  margin: 0 1px;
+  margin: 0 4px;
 }
