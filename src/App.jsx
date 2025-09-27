@@ -1,5 +1,5 @@
 import Meter from './assets/components/meter';
-import Bike from './assets/components/bike';
+import Bike from './assets/components/Bike';
 import Valli from './assets/components/valli';
 import "./assets/components/css/Mainpage.css";
 function App() {
