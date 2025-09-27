@@ -17,7 +17,13 @@ const Meter = () => {
 
     return (
         <div className="meter">
-            <h1 style={{ textAlign: "center",fontSize:50 }}>Like meter</h1>
+            <h1 style={{ textAlign: "center",
+    fontSize: "50px",
+    marginTop: "40px", // Adds space from the top
+    color: "white",
+    textShadow: "2px 2px 6px rgba(0, 0, 0, 0.8)", // Dark shadow for readability
+    fontWeight: "bold",
+    letterSpacing: "2px"  }}>Love meter</h1>
             <h2 style={{ textAlign: "center" }}>
                 <span >{counter}</span>
                 
