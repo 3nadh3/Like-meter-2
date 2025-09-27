@@ -1,4 +1,4 @@
-import Meter from './assets/components/meter';
+import Meter from './assets/components/meter.jsx';
 import Bike from './assets/components/Bike';
 import Valli from './assets/components/valli';
 import "./assets/components/css/Mainpage.css";
