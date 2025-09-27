@@ -1,7 +1,9 @@
-import Meter from './assets/components/meter.jsx';
-import Bike from './assets/components/Bike';
-import Valli from './assets/components/valli';
+import Meter from './assets/components/Meter.jsx';
+import Bike from './assets/components/Bike.jsx';
+import Valli from './assets/components/Valli.jsx';
 import "./assets/components/css/Mainpage.css";
+
+
 function App() {
 
   return (
